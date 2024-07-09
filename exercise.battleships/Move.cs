@@ -9,10 +9,15 @@ namespace exercise.battleships
     public class Move
     {
         private Guid _id;
-        public Move(Guid playerid, int X, int Y)
+        private DateTime _dateCompleted;
+        public Move(Game game, Guid playerid, int X, int Y)
         {
             _id = playerid;
 
+
         }
+        public int X { get; set; } 
+        public int Y { get; set; }
+
     }
 }
